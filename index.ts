@@ -10,8 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.get("/", (req, res) => {
-    res.type("text/html");
-    res.send("Hello <strong>World</strong>");
+    res.render('index');
 });
 
 app.listen(3000, () => {
